@@ -1,0 +1,4 @@
+<!--components/backTop/backTop.wxml-->
+<view class='top' bindtap='scrollTop'>
+  <image src="/imgs/backtop.png"></image>
+</view>

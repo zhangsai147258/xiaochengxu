@@ -1,0 +1,5 @@
+function sliceContent (content) {
+  return content.slice(0, 50) + "…"
+}
+
+module.exports = sliceContent

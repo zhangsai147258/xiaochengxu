@@ -1,0 +1,12 @@
+<wxs src="./index.wxs" module="sc"/>
+<yd-nav bindgetdata="getData" list="{{types}}"></yd-nav>
+
+<view class='list'>
+  <view class="article" wx:for="{{articles}}" wx:key="{{article.id}}" wx:for-item="article" bindtap='goArticle' data-id="{{article.id}}">
+    <image data-id="{{article.id}}" mode="center" src='{{article.img_url}}'></image>
+    <text data-id="{{article.id}}">{{article.title}}</text>
+    <view class="article-content">{{sc(article.content)}}</view>
+  </view>
+  <text class='no-data' wx-if="{{noData}}">- 到底了 -</text>
+</view>
+<back-top wx:if="{{scroll > 20}}"></back-top>

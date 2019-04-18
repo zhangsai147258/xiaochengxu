@@ -1,0 +1,16 @@
+/* components/backTop/backTop.wxss */
+image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.top {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background:#f25a4e; 
+  box-shadow:0 3px 3px rgba(0,0,0,.1);
+  position: fixed;
+  right: 30rpx;
+  bottom: 60rpx;
+}
